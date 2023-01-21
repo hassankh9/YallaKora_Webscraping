@@ -5,6 +5,8 @@
 * Teams names
 * channel name
 * Time of the match
+* The round of the match
 * Results
+
 
 The result will be in a csv file
