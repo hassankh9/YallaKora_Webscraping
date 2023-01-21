@@ -74,8 +74,8 @@ def main(page):
         
     keys = list(match_details[0].keys())
     
-    with open(r"D:\Programming\Web Scraping\matches.csv", "w" ,encoding="utf-8-sig" ,newline='') as output:
-        dict_writer = csv.DictWriter(output, fieldnames=keys)
+    with open("matches.csv", "w" ,encoding="utf-8-sig" ,newline='') as output:
+        dict_writer = csv.DictWriter(output, keys)
         dict_writer.writeheader()
         
         dict_writer.writerows(match_details)
